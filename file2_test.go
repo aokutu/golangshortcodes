@@ -31,3 +31,4 @@ func TestTriarea(t *testing.T) {
 	} 
 	}
 }
+//run  it go run file2_test.go -v  to see the customised message
