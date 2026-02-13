@@ -1,1 +1,2 @@
+# This is an automated comment added by pre-commit hook
 ABC
