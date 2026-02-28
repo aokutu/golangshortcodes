@@ -37,8 +37,7 @@ func main(){
         return players[i].scores > players[j].scores
     }   )
 
-	fmt.Println(players)
-
+	
 	rank :=1 
 	
 

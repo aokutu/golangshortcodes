@@ -153,7 +153,7 @@ func (a *Agent) Ask(userInput string) (string, error) {
    HTTP HANDLERS
 ========================= */
 
-type AgentResponse struct {
+type processedoutput struct {
 	Response string `json:"response"`
 }
 
@@ -180,7 +180,7 @@ func processAgent(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(AgentResponse{Response: reply})
+	json.NewEncoder(w).Encode(processedoutput{Response: reply})
 }
 
 func aiagentPage(w http.ResponseWriter, r *http.Request) {
